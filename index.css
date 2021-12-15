@@ -1,0 +1,19 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    max-width: max-content;
+    margin: auto;
+    
+}
+section{
+background: hsl(0, 0%, 100%);
+width: 600px;
+max-width: 95%;
+padding: 4%;
+border-radius: 20px;
+
+
+}
+body img{
+    margin: auto;
+}
+.leftSide{}

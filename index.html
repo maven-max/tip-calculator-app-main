@@ -34,19 +34,28 @@
         <input id="bill" type="number" min="0.00" step="0.01" />
         <br />
         <label for="select">Select Tip %</label>
-        <button id="select">5%</button>
-        <button id="select">10%</button>
-        <button id="select">15%</button>
-        <button id="select">25%</button>
-        <button id="select">50%</button>
-        <input type="number" min="0.00" step="0.01" />
+        <div class="buttonContainer">
+          <button id="select">5%</button>
+          <button id="select">10%</button>
+          <button id="select">15%</button>
+          <button id="select">25%</button>
+          <button id="select">50%</button>
+          <input type="number" placeholder="Custom" min="0.00" step="0.01" />
+        </div>
 
         <br />
         <label for="people">Number of People</label>
-        <input type="number" min="1" step="1" />
+        <input id="people" type="number" min="1" step="1" />
       </article>
 
-      <article class="rightSide"></article>
+      <article class="rightSide">
+        <div class="outputGrid">
+          <label for="output">Tip Amount</label>
+          <output>$4.27</output>
+          
+        </div>
+      </div>
+      </article>
     </section>
 
     Tip Amount / person Total / person Reset

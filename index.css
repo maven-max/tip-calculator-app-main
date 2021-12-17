@@ -17,7 +17,6 @@ section {
   padding: 4%;
   border-radius: 20px;
   display: flex;
-  display: flex;
 }
 section article {
   display: inline-block;
@@ -111,12 +110,12 @@ input {
     margin: 2%;
   }
 } */
-@media screen and (max-width: 300px) {
+/* @media screen and (max-width: 300px) {
   section article {
     background-color: indianred;
     width: 100%;
   }
-}
+} */
 @media screen and (max-width: 769px) {
   .section {
     flex-direction: column;

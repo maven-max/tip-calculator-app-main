@@ -95,15 +95,16 @@ input {
   /* width: 46%; */
   background-color: hsl(183, 100%, 15%);
   display: inline-block;
+  padding: 5%;
   /* position: relative; */
 }
 .rightSide div {
   display: flex;
   position: relative;
+  margin-bottom: 5%;
 }
 .rightSide div div {
   flex-direction: column;
-  margin: 10%;
 }
 .rightSide div div p {
   margin: 0%;
@@ -113,19 +114,16 @@ input {
   color: hsl(186, 14%, 43%);
 }
 .rightSide div output {
+  color: hsl(172, 67%, 45%);
   font-size: xx-large;
   position: absolute;
-  color: hsl(172, 67%, 45%);
-  bottom: 20%;
   right: 0%;
 }
 .rightSide footer {
   background-color: hsl(172, 67%, 45%);
   padding: 5px;
-  margin: 10% 5%;
   text-align: center;
-  position: relative;
-  bottom: 0px;
+  margin-top: 30%;
   border-radius: 5px;
 
   color: hsl(183, 100%, 15%);

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+body {
+  background-color: hsl(185, 41%, 84%);
+  max-width: max-content;
+  margin: auto;
+  font-family: "Space Mono", monospace;
+}
+body img {
+  display: block;
+  margin: auto;
+  padding: 10%;
+}
+section {
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  width: 600px;
+  max-width: 95%;
+  padding: 2%;
+  border-radius: 20px;
+  margin: auto;
+}
+section article {
+  border-radius: 10px;
+  margin: 2%;
+  padding: 1%;
+  flex-basis: 46%;
+}
+.leftSide {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1%;
+}
+
+label {
+  display: block;
+  color: hsl(186, 14%, 43%);
+}
+input {
+  background-color: hsl(189, 41%, 97%);
+  background-color: indianred;
+  background-position: left center;
+  background-position-x: 5%;
+  text-align: right;
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+#bill {
+  background-image: url("./images/icon-dollar.svg");
+  background-repeat: no-repeat;
+
+  border: none;
+  outline: none;
+
+  font-weight: 900;
+  color: hsl(186, 14%, 43%);
+}
+.buttonContainer {
+  /* margin: 0% auto; */
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(
+    auto-fit,
+    minmax(0, min(100%/2, max(74px, 46%/3))) /*74px *
+  ); */
+}
+@media (max-width: 300px) {
+  .buttonContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.buttonContainer button,
+.buttonContainer input {
+  height: 24px;
+  width: 100%;
+
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+}
+/* - Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */
+.buttonContainer input {
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(189, 41%, 97%);
+}
+#people {
+  background-image: url("./images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position-x: 5%;
+}
+.rightSide {
+  /* width: 46%; */
+  background-color: hsl(183, 100%, 15%);
+  display: inline-block;
+}
+
+@media screen and (max-width: 769px) {
+  section {
+    flex-direction: column;
+  }
+}

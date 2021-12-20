@@ -98,6 +98,16 @@ input {
   display: inline-block;
   /* position: relative; */
 }
+.rightSide div {
+  display: flex;
+}
+.rightSide div div {
+  flex-direction: column;
+  margin: 10%;
+}
+.rightSide div div p {
+  margin: 0%;
+}
 .rightSide footer {
   background-color: hsl(172, 67%, 45%);
   padding: 5px;

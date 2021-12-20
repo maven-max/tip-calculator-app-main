@@ -19,25 +19,21 @@ section {
   display: flex;
 }
 section article {
-  display: inline-block;
-  width: 46%;
+  /* width: 46%; */
   margin: 1%;
+  padding: 1%;
+  flex-basis: 46%;
 }
 
 .leftSide {
   background-color: hsl(0, 13%, 83%);
-
   border-radius: 10px;
   margin: 2%;
+  margin: 1%;
+  padding: 1%;
+  flex-basis: 46%;
 }
-/* @media screen and (max-width: 300px) {
-  .leftSide {
-    background-color: hsl(0, 13%, 83%);
-    width: 100%;
-    border-radius: 10px;
-    margin: 2%;
-  }
-} */
+
 label {
   display: block;
   color: hsl(186, 14%, 43%);
@@ -72,8 +68,9 @@ label {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
-    minmax(0, min(100%/2, max(64px, 100%/3)))
+    minmax(0, min(100%/2, max(74px, 100%/3)))
   );
+  display: flex;
 }
 .buttonContainer button,
 input {
@@ -101,23 +98,45 @@ input {
   margin: 2%;
   display: inline-block;
 }
+@media screen and (max-width: 300px) {
+  .section {
+    background: hsl(0, 39%, 58%);
+    width: 600px;
+    max-width: 95%;
+    padding: 4%;
+    border-radius: 20px;
+    flex-direction: column;
+  }
+}
 /* @media screen and (max-width: 300px) {
   .rightSide {
     width: 100%;
-    /* background-color: hsl(183, 100%, 15%); *
-    background-color: red;
+    background-color: hsl(36, 57%, 48%);
     border-radius: 10px;
     margin: 2%;
+    flex-direction: column;
   }
-} */
-/* @media screen and (max-width: 300px) {
-  section article {
-    background-color: indianred;
+}
+@media screen and (max-width: 300px) {
+  .leftSide {
     width: 100%;
+    background-color: hsl(0, 61%, 48%);
+    border-radius: 10px;
+    margin: 2%;
+    flex-direction: column;
   }
 } */
+
+.container {
+  display: flex;
+}
+.box {
+  margin: 1%;
+  padding: 1%;
+  flex-basis: 46%;
+}
 @media screen and (max-width: 769px) {
-  .section {
+  .container {
     flex-direction: column;
   }
 }

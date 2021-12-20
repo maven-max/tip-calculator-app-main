@@ -14,8 +14,7 @@ body img {
 section {
   display: flex;
   background: hsl(0, 0%, 100%);
-  width: 600px;
-  max-width: 95%;
+  width: max-content;
   padding: 2%;
   border-radius: 20px;
   margin: auto;
@@ -100,6 +99,7 @@ input {
 }
 .rightSide div {
   display: flex;
+  position: relative;
 }
 .rightSide div div {
   flex-direction: column;
@@ -107,6 +107,17 @@ input {
 }
 .rightSide div div p {
   margin: 0%;
+  color: hsl(0, 0%, 100%);
+}
+.rightSide div div #h2 {
+  color: hsl(186, 14%, 43%);
+}
+.rightSide div output {
+  font-size: xx-large;
+  position: absolute;
+  color: hsl(172, 67%, 45%);
+  bottom: 20%;
+  right: 0%;
 }
 .rightSide footer {
   background-color: hsl(172, 67%, 45%);
@@ -114,7 +125,7 @@ input {
   margin: 10% 5%;
   text-align: center;
   position: relative;
-  bottom: -90px;
+  bottom: 0px;
   border-radius: 5px;
 
   color: hsl(183, 100%, 15%);

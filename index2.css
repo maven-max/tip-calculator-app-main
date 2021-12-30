@@ -15,8 +15,10 @@ section {
   display: flex;
   background: hsl(0, 0%, 100%);
   width: max-content;
+  max-width: 90%;
   padding: 2%;
   border-radius: 20px;
+  margin: 10%;
   margin: auto;
 }
 section article {
@@ -33,6 +35,7 @@ section article {
 label {
   display: block;
   color: hsl(186, 14%, 43%);
+  margin-bottom: 3%;
 }
 input {
   background-color: hsl(189, 41%, 97%);
@@ -44,7 +47,7 @@ input {
   font-weight: 900;
   color: hsl(186, 14%, 43%);
   width: 100%;
-  height: 30px;
+  height: 10%;
   border: none;
   outline: none;
 }
@@ -61,16 +64,13 @@ input {
     minmax(0, min(100%/2, max(74px, 46%/3))) /*74px *
   ); */
 }
-@media (max-width: 300px) {
-  .buttonContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width: 375px) {
 }
 .buttonContainer button,
 .buttonContainer input {
-  height: 24px;
+  height: 40px;
   width: 100%;
-
+  /* font-family: "Space Mono", monospace; */
   border: none;
   outline: none;
   text-align: center;
@@ -129,8 +129,16 @@ input {
   color: hsl(183, 100%, 15%);
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 550px) {
   section {
     flex-direction: column;
   }
+  .buttonContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* body img {
+    display: block;
+    margin: auto;
+    padding: 10%;
+  } */
 }
